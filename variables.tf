@@ -1,5 +1,15 @@
 variable "container_name" {
     description = "Value of the name for the Docker Container"
     type = string
-    default = "ExampleNginxContainer"
+    default = "RabbitMQ"
+}
+
+variable "rabbitmqUser" {
+    description = "Management username"
+    type = string
+}
+
+variable "rabbitmqPass" {
+    description = "Management password"
+    type = string
 }
