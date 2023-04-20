@@ -8,4 +8,7 @@ provider "rabbitmq" {
 # Create a virtual host
 resource "rabbitmq_vhost" "vhost_222" {
   name = "vhost_222"
+depends_on = [
+  docker_container.rabbitmq
+]
 }
